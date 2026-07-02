@@ -3,178 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kohat Hujra Restaurant - Experience authentic Shinwari and Pashtun flavors with premium hospitality. Located in Kohat, Pakistan. Order now on WhatsApp.">
-    <meta name="keywords" content="Kohat Restaurant, Shinwari Restaurant, Pashtun Food, Mutton Karahi, Chicken Sajji, BBQ Kohat, Pakistani Restaurant">
-    <meta name="author" content="Kohat Hujra Restaurant">
+    <meta name="description" content="Kohat Hujra Restaurant - Experience authentic Shinwari and Pashtun flavors with premium hospitality in Kohat, Pakistan.">
+    <meta name="keywords" content="Kohat Restaurant, Shinwari Food, Pashtun Cuisine, Mutton Karahi, Dum Pukht, Luxury Restaurant">
+    <title>Kohat Hujra Restaurant | Where Tradition Meets Taste</title>
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Kohat Hujra Restaurant - Authentic Shinwari Cuisine">
-    <meta property="og:description" content="Experience authentic Shinwari and Pashtun flavors with premium hospitality in Kohat, Pakistan.">
-    <meta property="og:type" content="restaurant">
-    <meta property="og:url" content="https://kohathujra.com">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200">
-    
-    <!-- Schema.org Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "name": "Kohat Hujra Restaurant",
-      "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "KDA Road Malang Abad Pul No.4 School",
-        "addressLocality": "Kohat",
-        "addressCountry": "Pakistan"
-      },
-      "telephone": "+92 333 9665538",
-      "servesCuisine": "Pashtun, Shinwari, Pakistani",
-      "priceRange": "PKR 130 - PKR 12000",
-      "url": "https://kohathujra.com"
-    }
-    </script>
-    
-    <title>Kohat Hujra Restaurant - Authentic Shinwari & Pashtun Cuisine</title>
-    
-    <!-- Preconnect for Performance -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍖</text></svg>">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="Kohat Hujra Restaurant Logo" class="preloader-logo">
+            </div>
+            <div class="loading-text">Welcome to Excellence</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Navbar -->
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/logo.png" alt="Kohat Hujra Logo" class="logo-icon">
-                <span class="logo-text">Kohat Hujra</span>
+                <img src="logo.png" alt="Kohat Hujra Restaurant">
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#signature" class="nav-link">Signature Dishes</a></li>
+                <li><a href="#menu" class="nav-link">Full Menu</a></li>
                 <li><a href="#platters" class="nav-link">Platters</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="https://wa.me/923339665538" class="nav-link nav-cta">Order Now</a></li>
             </ul>
-            <div class="nav-hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <a href="https://wa.me/923339665538" class="btn-whatsapp-nav" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
+        <div class="particles" id="particles"></div>
+        
         <div class="hero-content">
-            <div class="hero-welcome" dir="rtl">پخیر راغلے</div>
-            <h1 class="hero-title">Where Tradition Meets Taste</h1>
-            <p class="hero-subtitle">Experience authentic Shinwari and Pashtun flavors with premium hospitality</p>
-            <div class="hero-buttons">
-                <a href="#menu" class="btn btn-primary">View Menu</a>
-                <a href="https://wa.me/923339665538" class="btn btn-secondary">
+            <div class="hero-logo-badge">
+                <img src="logo.png" alt="Kohat Hujra Restaurant">
+            </div>
+            
+            <div class="pashto-welcome" data-aos="fade-down">
+                <span class="pashto-text">پخیر راغلے</span>
+                <span class="welcome-subtitle">Welcome to Authentic Hospitality</span>
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                Kohat Hujra Restaurant
+            </h1>
+            
+            <div class="hero-divider" data-aos="zoom-in" data-aos-delay="400">
+                <span class="divider-ornament">✦</span>
+            </div>
+            
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+                Where Tradition Meets Taste
+            </p>
+            
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="800">
+                Experience authentic Shinwari and Pashtun flavors with premium hospitality
+            </p>
+            
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1000">
+                <a href="#menu" class="btn btn-primary">
+                    <i class="fas fa-utensils"></i> View Menu
+                </a>
+                <a href="https://wa.me/923339665538" class="btn btn-secondary" target="_blank">
                     <i class="fab fa-whatsapp"></i> Order on WhatsApp
                 </a>
-                <a href="https://maps.app.goo.gl/mry6xfA2y94xnHyN6" class="btn btn-outline" target="_blank">
-                    <i class="fas fa-location-dot"></i> Get Directions
+                <a href="https://maps.app.goo.gl/mry6xfA2y94xnHyN6" class="btn btn-tertiary" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> Get Directions
                 </a>
             </div>
+            
+            <div class="hero-rating" data-aos="fade-up" data-aos-delay="1200">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="rating-text">4.0 Stars • Trusted by Thousands</span>
+            </div>
         </div>
+        
         <div class="scroll-indicator">
-            <div class="scroll-mouse"></div>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to Explore</p>
         </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Our Story</span>
-                <h2 class="section-title">A Tradition of Excellence</h2>
+                <h2 class="section-title">A Legacy of Authentic Flavors</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
             </div>
+            
             <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        At Kohat Hujra Restaurant, we bring the rich heritage of Pashtun hospitality to your table. Our name "Hujra" represents the traditional gathering place where guests are honored with the finest food and warmest welcome.
-                    </p>
-                    <p>
-                        Every dish we serve is a celebration of authentic Shinwari and Pashtun flavors, prepared using time-honored recipes and the freshest ingredients. From our signature Mutton Karahi to our succulent Chicken Sajji, each meal is crafted with passion and precision.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-utensils"></i>
-                            <h3>Authentic Recipes</h3>
-                            <p>Traditional Pashtun cooking methods passed down through generations</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-fire"></i>
-                            <h3>Premium Quality</h3>
-                            <p>Only the finest ingredients and freshest meat for every dish</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-heart"></i>
-                            <h3>Warm Hospitality</h3>
-                            <p>Experience genuine Pashtun hospitality in every visit</p>
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop" alt="Kohat Hujra Restaurant Hospitality">
+                        <div class="image-overlay">
+                            <div class="overlay-badge">
+                                <i class="fas fa-award"></i>
+                                <span>Premium Quality</span>
+                            </div>
                         </div>
                     </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <h3 class="about-heading">Experience Traditional Pashtun Hospitality</h3>
+                    <p class="about-description">
+                        At Kohat Hujra Restaurant, we bring you the finest authentic Shinwari and Pashtun cuisine, prepared with passion and served with the warmth of traditional hospitality. Every dish tells a story of our rich cultural heritage.
+                    </p>
+                    <p class="about-description">
+                        From our signature Mutton Karahi to the exquisite Dum Pukht, each recipe has been perfected over generations. We use only the freshest ingredients and traditional cooking methods to ensure an unforgettable dining experience.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Authentic Recipes</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Quality Ingredients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Traditional Cooking Methods</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Warm Hospitality</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Visit Us Today</a>
+                </div>
+            </div>
+            
+            <div class="stats-container" data-aos="fade-up">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number" data-count="50000">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-utensils"></i>
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Signature Dishes</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-award"></i>
+                    <div class="stat-number" data-count="10">0</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-heart"></i>
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">Authentic Taste</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Signature Dishes Section -->
-    <section class="signature-dishes">
+    <section class="signature" id="signature">
         <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Chef's Selection</span>
-                <h2 class="section-title">Signature Dishes</h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Culinary Excellence</span>
+                <h2 class="section-title">Our Signature Dishes</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
+                <p class="section-description">Discover our most celebrated dishes, crafted with authentic recipes and premium ingredients</p>
             </div>
+            
             <div class="signature-grid">
-                <div class="signature-card">
+                <div class="signature-card" data-aos="fade-up">
                     <div class="signature-image">
-                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&q=80" alt="Mutton Karahi" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=600&fit=crop" alt="Mutton Karahi">
+                        <div class="signature-overlay">
+                            <button class="btn-order" onclick="openOrderModal('Mutton Karahi', 'مٹن کڑاہی', 3200, 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=600&fit=crop')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                        <div class="signature-badge">Chef's Special</div>
                     </div>
-                    <div class="signature-info">
-                        <h3>Mutton Karahi</h3>
-                        <p class="urdu-text" dir="rtl">مٹن کڑاہی</p>
-                        <p class="dish-description">Tender mutton cooked in traditional karahi with aromatic spices</p>
-                        <div class="dish-price">PKR 3,200</div>
+                    <div class="signature-content">
+                        <h3 class="signature-name">Mutton Karahi</h3>
+                        <p class="signature-name-urdu">مٹن کڑاہی</p>
+                        <p class="signature-description">Tender mutton cooked in traditional karahi with aromatic spices and herbs</p>
+                        <div class="signature-footer">
+                            <span class="signature-price">Rs. 3,200</span>
+                            <span class="signature-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="signature-card">
+
+                <div class="signature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="signature-image">
-                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800&q=80" alt="Chicken Sajji" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=600&h=600&fit=crop" alt="Mutton Dum Pukht">
+                        <div class="signature-overlay">
+                            <button class="btn-order" onclick="openOrderModal('Mutton Dum Pukht', 'مٹن دم پخت', 3400, 'https://images.unsplash.com/photo-1567337710282-00832b415979?w=600&h=600&fit=crop')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                        <div class="signature-badge">Premium</div>
                     </div>
-                    <div class="signature-info">
-                        <h3>Chicken Sajji</h3>
-                        <p class="urdu-text" dir="rtl">چکن سجی</p>
-                        <p class="dish-description">Whole chicken marinated with special spices and slow-roasted to perfection</p>
-                        <div class="dish-price">PKR 1,500</div>
+                    <div class="signature-content">
+                        <h3 class="signature-name">Mutton Dum Pukht</h3>
+                        <p class="signature-name-urdu">مٹن دم پخت</p>
+                        <p class="signature-description">Slow-cooked mutton sealed with dough, infused with royal spices</p>
+                        <div class="signature-footer">
+                            <span class="signature-price">Rs. 3,400</span>
+                            <span class="signature-rating">
+                                <i class="fas fa-star"></i> 5.0
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="signature-card">
+
+                <div class="signature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="signature-image">
-                        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=800&q=80" alt="Mutton Dum Pukht" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&h=600&fit=crop" alt="Chicken Sajji">
+                        <div class="signature-overlay">
+                            <button class="btn-order" onclick="openOrderModal('Chicken Sajji', 'چکن سجی', 1500, 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&h=600&fit=crop')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                        <div class="signature-badge">Popular</div>
                     </div>
-                    <div class="signature-info">
-                        <h3>Mutton Dum Pukht</h3>
-                        <p class="urdu-text" dir="rtl">مٹن دم پخت</p>
-                        <p class="dish-description">Slow-cooked mutton sealed in aromatic spices - a royal delicacy</p>
-                        <div class="dish-price">PKR 3,400</div>
+                    <div class="signature-content">
+                        <h3 class="signature-name">Chicken Sajji</h3>
+                        <p class="signature-name-urdu">چکن سجی</p>
+                        <p class="signature-description">Whole chicken marinated in special spices, roasted to perfection</p>
+                        <div class="signature-footer">
+                            <span class="signature-price">Rs. 1,500</span>
+                            <span class="signature-rating">
+                                <i class="fas fa-star"></i> 4.7
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="signature-image">
+                        <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=600&h=600&fit=crop" alt="Chicken White Handi">
+                        <div class="signature-overlay">
+                            <button class="btn-order" onclick="openOrderModal('Chicken White Handi', 'چکن وائٹ ہانڈی', 1900, 'https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=600&h=600&fit=crop')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                        <div class="signature-badge">Signature</div>
+                    </div>
+                    <div class="signature-content">
+                        <h3 class="signature-name">Chicken White Handi</h3>
+                        <p class="signature-name-urdu">چکن وائٹ ہانڈی</p>
+                        <p class="signature-description">Creamy chicken curry with rich yogurt and cashew base</p>
+                        <div class="signature-footer">
+                            <span class="signature-price">Rs. 1,900</span>
+                            <span class="signature-rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="signature-image">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&h=600&fit=crop" alt="Pata Tikka">
+                        <div class="signature-overlay">
+                            <button class="btn-order" onclick="openOrderModal('Pata Tikka', 'پٹہ تکہ', 700, 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&h=600&fit=crop')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                        <div class="signature-badge">Recommended</div>
+                    </div>
+                    <div class="signature-content">
+                        <h3 class="signature-name">Pata Tikka</h3>
+                        <p class="signature-name-urdu">پٹہ تکہ</p>
+                        <p class="signature-description">Succulent leg piece marinated and grilled to smoky perfection</p>
+                        <div class="signature-footer">
+                            <span class="signature-price">Rs. 700</span>
+                            <span class="signature-rating">
+                                <i class="fas fa-star"></i> 4.6
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="signature-image">
+                        <img src="https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=600&h=600&fit=crop" alt="Finger Fish">
+                        <div class="signature-overlay">
+                            <button class="btn-order" onclick="openOrderModal('Finger Fish', 'فنگر فش', 2300, 'https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=600&h=600&fit=crop')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
+                        <div class="signature-badge">Seafood Special</div>
+                    </div>
+                    <div class="signature-content">
+                        <h3 class="signature-name">Finger Fish</h3>
+                        <p class="signature-name-urdu">فنگر فش</p>
+                        <p class="signature-description">Premium fish marinated with special spices, fried golden crispy</p>
+                        <div class="signature-footer">
+                            <span class="signature-price">Rs. 2,300</span>
+                            <span class="signature-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,313 +365,600 @@
     <!-- Full Menu Section -->
     <section class="menu" id="menu">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Complete Selection</span>
-                <h2 class="section-title">Our Menu</h2>
+                <h2 class="section-title">Our Full Menu</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
+                <p class="section-description">Explore our extensive collection of authentic dishes</p>
             </div>
-            
+
             <!-- Menu Tabs -->
-            <div class="menu-tabs">
-                <button class="menu-tab active" data-category="mutton">Mutton Selection</button>
-                <button class="menu-tab" data-category="chicken">Chicken Selection</button>
-                <button class="menu-tab" data-category="special">Hujra Special</button>
-                <button class="menu-tab" data-category="fish">Fish & BBQ</button>
+            <div class="menu-tabs" data-aos="fade-up">
+                <button class="menu-tab active" data-category="mutton">
+                    <i class="fas fa-drumstick-bite"></i> Mutton Selection
+                </button>
+                <button class="menu-tab" data-category="chicken">
+                    <i class="fas fa-drumstick-bite"></i> Chicken Selection
+                </button>
+                <button class="menu-tab" data-category="special">
+                    <i class="fas fa-crown"></i> Hujra Special
+                </button>
+                <button class="menu-tab" data-category="fish">
+                    <i class="fas fa-fish"></i> Fish & BBQ
+                </button>
             </div>
 
             <!-- Mutton Selection -->
-            <div class="menu-category active" id="mutton">
+            <div class="menu-category active" data-category="mutton">
                 <div class="menu-grid">
-                    <div class="menu-card" data-name="Mutton Karahi" data-urdu="مٹن کڑاہی" data-price="3200">
+                    <div class="menu-card" data-aos="fade-up">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Mutton Karahi" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&h=400&fit=crop" alt="Mutton Karahi">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Mutton Karahi', 'مٹن کڑاہی', 3200, 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Mutton Karahi</h3>
-                            <p class="urdu-text" dir="rtl">مٹن کڑاہی</p>
-                            <div class="menu-price">PKR 3,200</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mutton Karahi</h4>
+                            <p class="menu-name-urdu">مٹن کڑاہی</p>
+                            <p class="menu-description">Traditional mutton karahi with aromatic spices</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 3,200</span>
+                                <button class="btn-add" onclick="openOrderModal('Mutton Karahi', 'مٹن کڑاہی', 3200, 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Mutton Namkeen Karahi" data-urdu="مٹن نمکین کڑاہی" data-price="3200">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80" alt="Mutton Namkeen Karahi" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&h=400&fit=crop" alt="Mutton Namkeen Karahi">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Mutton Namkeen Karahi', 'مٹن نمکین کڑاہی', 3200, 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Mutton Namkeen Karahi</h3>
-                            <p class="urdu-text" dir="rtl">مٹن نمکین کڑاہی</p>
-                            <div class="menu-price">PKR 3,200</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mutton Namkeen Karahi</h4>
+                            <p class="menu-name-urdu">مٹن نمکین کڑاہی</p>
+                            <p class="menu-description">Salt-based karahi with minimal spices, maximum flavor</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 3,200</span>
+                                <button class="btn-add" onclick="openOrderModal('Mutton Namkeen Karahi', 'مٹن نمکین کڑاہی', 3200, 'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Mutton Seekh" data-urdu="مٹن سیخ" data-price="3200">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&q=80" alt="Mutton Seekh" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&h=400&fit=crop" alt="Mutton Seekh">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Mutton Seekh', 'مٹن سیخ', 3200, 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Mutton Seekh</h3>
-                            <p class="urdu-text" dir="rtl">مٹن سیخ</p>
-                            <div class="menu-price">PKR 3,200</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mutton Seekh</h4>
+                            <p class="menu-name-urdu">مٹن سیخ</p>
+                            <p class="menu-description">Premium mutton seekh kebab, charcoal grilled</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 3,200</span>
+                                <button class="btn-add" onclick="openOrderModal('Mutton Seekh', 'مٹن سیخ', 3200, 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Pata Tikka" data-urdu="پٹہ تکہ" data-price="700">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&q=80" alt="Pata Tikka" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&h=400&fit=crop" alt="Pata Tikka">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Pata Tikka', 'پٹہ تکہ', 700, 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Pata Tikka</h3>
-                            <p class="urdu-text" dir="rtl">پٹہ تکہ</p>
-                            <div class="menu-price">PKR 700</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Pata Tikka</h4>
+                            <p class="menu-name-urdu">پٹہ تکہ</p>
+                            <p class="menu-description">Marinated leg tikka, grilled to perfection</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 700</span>
+                                <button class="btn-add" onclick="openOrderModal('Pata Tikka', 'پٹہ تکہ', 700, 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Chicken Selection -->
-            <div class="menu-category" id="chicken">
+            <div class="menu-category" data-category="chicken">
                 <div class="menu-grid">
-                    <div class="menu-card" data-name="Chicken Karahi" data-urdu="چکن کڑاہی" data-price="1700">
+                    <div class="menu-card" data-aos="fade-up">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=600&q=80" alt="Chicken Karahi" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&h=400&fit=crop" alt="Chicken Karahi">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Chicken Karahi', 'چکن کڑاہی', 1700, 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Chicken Karahi</h3>
-                            <p class="urdu-text" dir="rtl">چکن کڑاہی</p>
-                            <div class="menu-price">PKR 1,700</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Chicken Karahi / Namkeen</h4>
+                            <p class="menu-name-urdu">چکن کڑاہی / نمکین کڑاہی</p>
+                            <p class="menu-description">Classic chicken karahi with rich tomato gravy</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,700</span>
+                                <button class="btn-add" onclick="openOrderModal('Chicken Karahi', 'چکن کڑاہی', 1700, 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Chicken Seekh" data-urdu="چکن سیخ" data-price="1300">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80" alt="Chicken Seekh" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500&h=400&fit=crop" alt="Chicken Seekh">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Chicken Seekh', 'چکن سیخ', 1300, 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Chicken Seekh</h3>
-                            <p class="urdu-text" dir="rtl">چکن سیخ</p>
-                            <div class="menu-price">PKR 1,300</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Chicken Seekh</h4>
+                            <p class="menu-name-urdu">چکن سیخ</p>
+                            <p class="menu-description">Juicy chicken seekh kebabs with aromatic spices</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,300</span>
+                                <button class="btn-add" onclick="openOrderModal('Chicken Seekh', 'چکن سیخ', 1300, 'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Chicken White Handi" data-urdu="چکن وائٹ ہانڈی" data-price="1900">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80" alt="Chicken White Handi" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=500&h=400&fit=crop" alt="Chicken White Handi">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Chicken White Handi', 'چکن وائٹ ہانڈی', 1900, 'https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Chicken White Handi</h3>
-                            <p class="urdu-text" dir="rtl">چکن وائٹ ہانڈی</p>
-                            <div class="menu-price">PKR 1,900</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Chicken White Handi</h4>
+                            <p class="menu-name-urdu">چکن وائٹ ہانڈی</p>
+                            <p class="menu-description">Creamy white curry with cashew and yogurt</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,900</span>
+                                <button class="btn-add" onclick="openOrderModal('Chicken White Handi', 'چکن وائٹ ہانڈی', 1900, 'https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Chicken Badami" data-urdu="چکن بادامی" data-price="2200">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Chicken Badami" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1633945274035-6c8c2c6d0e7d?w=500&h=400&fit=crop" alt="Chicken Badami">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Chicken Badami', 'چکن بادامی', 2200, 'https://images.unsplash.com/photo-1633945274035-6c8c2c6d0e7d?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Chicken Badami</h3>
-                            <p class="urdu-text" dir="rtl">چکن بادامی</p>
-                            <div class="menu-price">PKR 2,200</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Chicken Badami</h4>
+                            <p class="menu-name-urdu">چکن بادامی</p>
+                            <p class="menu-description">Rich almond-based curry with tender chicken</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 2,200</span>
+                                <button class="btn-add" onclick="openOrderModal('Chicken Badami', 'چکن بادامی', 2200, 'https://images.unsplash.com/photo-1633945274035-6c8c2c6d0e7d?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Chicken Roast / BBQ" data-urdu="چکن روسٹ / باربی کیو" data-price="1300">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&q=80" alt="Chicken Roast" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop" alt="Chicken Roast">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Chicken Roast / BBQ', 'چکن روسٹ / باربی کیو', 1300, 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Chicken Roast / BBQ</h3>
-                            <p class="urdu-text" dir="rtl">چکن روسٹ / باربی کیو</p>
-                            <div class="menu-price">PKR 1,300</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Chicken Roast / BBQ</h4>
+                            <p class="menu-name-urdu">چکن روسٹ / باربی کیو</p>
+                            <p class="menu-description">Perfectly roasted chicken with smoky flavor</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,300</span>
+                                <button class="btn-add" onclick="openOrderModal('Chicken Roast / BBQ', 'چکن روسٹ / باربی کیو', 1300, 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Chicken Sajji" data-urdu="چکن سجی" data-price="1500">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="500">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80" alt="Chicken Sajji" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop" alt="Chicken Sajji">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Chicken Sajji', 'چکن سجی', 1500, 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Chicken Sajji</h3>
-                            <p class="urdu-text" dir="rtl">چکن سجی</p>
-                            <div class="menu-price">PKR 1,500</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Chicken Sajji</h4>
+                            <p class="menu-name-urdu">چکن سجی</p>
+                            <p class="menu-description">Traditional Balochi-style roasted chicken</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,500</span>
+                                <button class="btn-add" onclick="openOrderModal('Chicken Sajji', 'چکن سجی', 1500, 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Chicken Tikka" data-urdu="چکن تکہ" data-price="350">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="600">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?w=600&q=80" alt="Chicken Tikka" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&h=400&fit=crop" alt="Chicken Tikka">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Chicken Tikka', 'چکن تکہ', 350, 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Chicken Tikka</h3>
-                            <p class="urdu-text" dir="rtl">چکن تکہ</p>
-                            <div class="menu-price">PKR 350</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Chicken Tikka</h4>
+                            <p class="menu-name-urdu">چکن تکہ</p>
+                            <p class="menu-description">Classic chicken tikka with yogurt marinade</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 350</span>
+                                <button class="btn-add" onclick="openOrderModal('Chicken Tikka', 'چکن تکہ', 350, 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Leg Piece / Chest Piece" data-urdu="لیگ پیس / چیسٹ پیس" data-price="320">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="700">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&q=80" alt="Leg Piece" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1562158147-f6df85a8715c?w=500&h=400&fit=crop" alt="Leg Piece">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Leg Piece / Chest Piece', 'لیگ پیس / چیسٹ پیس', 320, 'https://images.unsplash.com/photo-1562158147-f6df85a8715c?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Leg / Chest Piece</h3>
-                            <p class="urdu-text" dir="rtl">لیگ پیس / چیسٹ پیس</p>
-                            <div class="menu-price">PKR 320</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Leg / Chest Piece</h4>
+                            <p class="menu-name-urdu">لیگ پیس / چیسٹ پیس</p>
+                            <p class="menu-description">Grilled chicken pieces with spicy marinade</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 320</span>
+                                <button class="btn-add" onclick="openOrderModal('Leg Piece / Chest Piece', 'لیگ پیس / چیسٹ پیس', 320, 'https://images.unsplash.com/photo-1562158147-f6df85a8715c?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Malai Boti" data-urdu="ملائی بوٹی" data-price="350">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="800">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Malai Boti" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&h=400&fit=crop" alt="Malai Boti">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Malai Boti', 'ملائی بوٹی', 350, 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Malai Boti</h3>
-                            <p class="urdu-text" dir="rtl">ملائی بوٹی</p>
-                            <div class="menu-price">PKR 350</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Malai Boti</h4>
+                            <p class="menu-name-urdu">ملائی بوٹی</p>
+                            <p class="menu-description">Creamy chicken cubes grilled to perfection</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 350</span>
+                                <button class="btn-add" onclick="openOrderModal('Malai Boti', 'ملائی بوٹی', 350, 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Hujra Special -->
-            <div class="menu-category" id="special">
+            <div class="menu-category" data-category="special">
                 <div class="menu-grid">
-                    <div class="menu-card" data-name="Saalam Dumba" data-urdu="سالم دمبہ" data-price="3400">
+                    <div class="menu-card special-card" data-aos="fade-up">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Saalam Dumba" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Saalam Dumba">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Saalam Dumba', 'سالم دمبہ', 3400, 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
+                            <div class="special-badge">Hujra Special</div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Saalam Dumba</h3>
-                            <p class="urdu-text" dir="rtl">سالم دمبہ</p>
-                            <div class="menu-price">PKR 3,400</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Saalam Dumba</h4>
+                            <p class="menu-name-urdu">سالم دمبہ</p>
+                            <p class="menu-description">Whole lamb prepared in traditional style</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 3,400</span>
+                                <button class="btn-add" onclick="openOrderModal('Saalam Dumba', 'سالم دمبہ', 3400, 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Mutton Ran Sajji" data-urdu="مٹن ران سجی" data-price="3400">
+
+                    <div class="menu-card special-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&q=80" alt="Mutton Ran Sajji" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=400&fit=crop" alt="Mutton Ran Sajji">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Mutton Ran Sajji', 'مٹن ران سجی', 3400, 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
+                            <div class="special-badge">Hujra Special</div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Mutton Ran Sajji</h3>
-                            <p class="urdu-text" dir="rtl">مٹن ران سجی</p>
-                            <div class="menu-price">PKR 3,400</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mutton Ran Sajji</h4>
+                            <p class="menu-name-urdu">مٹن ران سجی</p>
+                            <p class="menu-description">Premium mutton leg roasted in sajji style</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 3,400</span>
+                                <button class="btn-add" onclick="openOrderModal('Mutton Ran Sajji', 'مٹن ران سجی', 3400, 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Mutton Khara Karahi" data-urdu="مٹن کھڑا کڑاہی" data-price="3400">
+
+                    <div class="menu-card special-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Mutton Khara Karahi" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&h=400&fit=crop" alt="Mutton Khara Karahi">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Mutton Khara Karahi', 'مٹن کھڑا کڑاہی', 3400, 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
+                            <div class="special-badge">Hujra Special</div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Mutton Khara Karahi</h3>
-                            <p class="urdu-text" dir="rtl">مٹن کھڑا کڑاہی</p>
-                            <div class="menu-price">PKR 3,400</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mutton Khara Karahi</h4>
+                            <p class="menu-name-urdu">مٹن کھڑا کڑاہی</p>
+                            <p class="menu-description">Whole mutton pieces in aromatic karahi</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 3,400</span>
+                                <button class="btn-add" onclick="openOrderModal('Mutton Khara Karahi', 'مٹن کھڑا کڑاہی', 3400, 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Mutton Dum Pukht / Rosh" data-urdu="مٹن دم پخت / روش" data-price="3400">
+
+                    <div class="menu-card special-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=600&q=80" alt="Mutton Dum Pukht" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&h=400&fit=crop" alt="Mutton Dum Pukht">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Mutton Dum Pukht / Rosh', 'مٹن دم پخت / روش', 3400, 'https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
+                            <div class="special-badge">Hujra Special</div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Mutton Dum Pukht / Rosh</h3>
-                            <p class="urdu-text" dir="rtl">مٹن دم پخت / روش</p>
-                            <div class="menu-price">PKR 3,400</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mutton Dum Pukht / Rosh</h4>
+                            <p class="menu-name-urdu">مٹن دم پخت / روش</p>
+                            <p class="menu-description">Slow-cooked royal mutton with rich spices</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 3,400</span>
+                                <button class="btn-add" onclick="openOrderModal('Mutton Dum Pukht / Rosh', 'مٹن دم پخت / روش', 3400, 'https://images.unsplash.com/photo-1567337710282-00832b415979?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Fish & BBQ -->
-            <div class="menu-category" id="fish">
+            <div class="menu-category" data-category="fish">
                 <div class="menu-grid">
-                    <div class="menu-card" data-name="Finger Fish" data-urdu="فنگر فش" data-price="2300">
+                    <div class="menu-card" data-aos="fade-up">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1580959375944-35b02f7f6657?w=600&q=80" alt="Finger Fish" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=500&h=400&fit=crop" alt="Finger Fish">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Finger Fish', 'فنگر فش', 2300, 'https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Finger Fish</h3>
-                            <p class="urdu-text" dir="rtl">فنگر فش</p>
-                            <div class="menu-price">PKR 2,300</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Finger Fish</h4>
+                            <p class="menu-name-urdu">فنگر فش</p>
+                            <p class="menu-description">Premium fish fried with special spices</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 2,300</span>
+                                <button class="btn-add" onclick="openOrderModal('Finger Fish', 'فنگر فش', 2300, 'https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Sher Fish" data-urdu="شیر فش" data-price="2000">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1559737558-2f5a9fc8005c?w=600&q=80" alt="Sher Fish" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop" alt="Sher Fish">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Sher Fish', 'شیر فش', 2000, 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Sher Fish</h3>
-                            <p class="urdu-text" dir="rtl">شیر فش</p>
-                            <div class="menu-price">PKR 2,000</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Sher Fish</h4>
+                            <p class="menu-name-urdu">شیر فش</p>
+                            <p class="menu-description">King fish prepared in traditional style</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 2,000</span>
+                                <button class="btn-add" onclick="openOrderModal('Sher Fish', 'شیر فش', 2000, 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Grass Fish" data-urdu="گراس فش" data-price="1300">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Grass Fish" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1534766438357-2b18814bd14e?w=500&h=400&fit=crop" alt="Grass Fish">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Grass Fish', 'گراس فش', 1300, 'https://images.unsplash.com/photo-1534766438357-2b18814bd14e?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Grass Fish</h3>
-                            <p class="urdu-text" dir="rtl">گراس فش</p>
-                            <div class="menu-price">PKR 1,300</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Grass Fish</h4>
+                            <p class="menu-name-urdu">گراس فش</p>
+                            <p class="menu-description">Fresh grass carp with aromatic spices</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,300</span>
+                                <button class="btn-add" onclick="openOrderModal('Grass Fish', 'گراس فش', 1300, 'https://images.unsplash.com/photo-1534766438357-2b18814bd14e?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Mali Fish" data-urdu="مالی فش" data-price="1200">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?w=600&q=80" alt="Mali Fish" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&h=400&fit=crop" alt="Mali Fish">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Mali Fish', 'مالی فش', 1200, 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Mali Fish</h3>
-                            <p class="urdu-text" dir="rtl">مالی فش</p>
-                            <div class="menu-price">PKR 1,200</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mali Fish</h4>
+                            <p class="menu-name-urdu">مالی فش</p>
+                            <p class="menu-description">Tender mali fish, fried to golden perfection</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,200</span>
+                                <button class="btn-add" onclick="openOrderModal('Mali Fish', 'مالی فش', 1200, 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Rahu Fish Fried" data-urdu="رہو فش فرائی" data-price="1000">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80" alt="Rahu Fish Fried" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=400&fit=crop" alt="Rahu Fish Fried">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Rahu Fish Fried', 'رہو فش فرائی', 1000, 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Rahu Fish Fried</h3>
-                            <p class="urdu-text" dir="rtl">رہو فش فرائی</p>
-                            <div class="menu-price">PKR 1,000</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Rahu Fish Fried</h4>
+                            <p class="menu-name-urdu">رہو فش فرائی</p>
+                            <p class="menu-description">Classic rahu fish, crispy fried</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,000</span>
+                                <button class="btn-add" onclick="openOrderModal('Rahu Fish Fried', 'رہو فش فرائی', 1000, 'https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Rahu Fish Grilled" data-urdu="رہو فش گرل" data-price="1100">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="500">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1580959375944-35b02f7f6657?w=600&q=80" alt="Rahu Fish Grilled" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=500&h=400&fit=crop" alt="Rahu Fish Grilled">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Rahu Fish Grilled', 'رہو فش گرل', 1100, 'https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Rahu Fish Grilled</h3>
-                            <p class="urdu-text" dir="rtl">رہو فش گرل</p>
-                            <div class="menu-price">PKR 1,100</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Rahu Fish Grilled</h4>
+                            <p class="menu-name-urdu">رہو فش گرل</p>
+                            <p class="menu-description">Rahu fish grilled with herbs and spices</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 1,100</span>
+                                <button class="btn-add" onclick="openOrderModal('Rahu Fish Grilled', 'رہو فش گرل', 1100, 'https://images.unsplash.com/photo-1580959375944-0b6e57898e58?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Bater Seekh" data-urdu="بٹیر سیخ" data-price="250">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="600">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80" alt="Bater Seekh" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=400&fit=crop" alt="Bater Seekh">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Bater Seekh', 'بٹیر سیخ', 250, 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Bater Seekh</h3>
-                            <p class="urdu-text" dir="rtl">بٹیر سیخ</p>
-                            <div class="menu-price">PKR 250</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Bater Seekh</h4>
+                            <p class="menu-name-urdu">بٹیر سیخ</p>
+                            <p class="menu-description">Quail seekh with traditional spices</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 250</span>
+                                <button class="btn-add" onclick="openOrderModal('Bater Seekh', 'بٹیر سیخ', 250, 'https://images.unsplash.com/photo-1544025162-d76694265947?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card" data-name="Seekh Kabab" data-urdu="سیخ کباب" data-price="130">
+
+                    <div class="menu-card" data-aos="fade-up" data-aos-delay="700">
                         <div class="menu-image">
-                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&q=80" alt="Seekh Kabab" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&h=400&fit=crop" alt="Seekh Kabab">
+                            <div class="menu-overlay">
+                                <button class="btn-quick-order" onclick="openOrderModal('Seekh Kabab', 'سیخ کباب', 130, 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&h=400&fit=crop')">
+                                    <i class="fas fa-cart-plus"></i> Quick Order
+                                </button>
+                            </div>
                         </div>
-                        <div class="menu-info">
-                            <h3>Seekh Kabab</h3>
-                            <p class="urdu-text" dir="rtl">سیخ کباب</p>
-                            <div class="menu-price">PKR 130</div>
-                            <button class="btn-order">Order Now</button>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Seekh Kabab</h4>
+                            <p class="menu-name-urdu">سیخ کباب</p>
+                            <p class="menu-description">Classic seekh kabab, charcoal grilled</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rs. 130</span>
+                                <button class="btn-add" onclick="openOrderModal('Seekh Kabab', 'سیخ کباب', 130, 'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&h=400&fit=crop')">
+                                    Order Now
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -501,173 +969,258 @@
     <!-- Platters Section -->
     <section class="platters" id="platters">
         <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Premium Offerings</span>
-                <h2 class="section-title">Special Platters</h2>
-                <p class="section-description">Perfect for families and gatherings - curated selections of our finest dishes</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Special Combinations</span>
+                <h2 class="section-title">Premium Platters</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
+                <p class="section-description">Curated feasts for your special gatherings</p>
             </div>
 
-            <!-- Platter Category Selector -->
-            <div class="platter-tabs">
-                <button class="platter-tab active" data-platter="dumpukht">Dum Pukht Platters</button>
-                <button class="platter-tab" data-platter="shinwari">Shinwari Platters</button>
+            <!-- Platter Type Tabs -->
+            <div class="platter-tabs" data-aos="fade-up">
+                <button class="platter-tab active" data-platter="dumpukht">
+                    <i class="fas fa-crown"></i> Dum Pukht Special
+                </button>
+                <button class="platter-tab" data-platter="shinwari">
+                    <i class="fas fa-star"></i> Shinwari Platters
+                </button>
             </div>
 
             <!-- Dum Pukht Platters -->
-            <div class="platter-category active" id="dumpukht">
+            <div class="platter-category active" data-platter="dumpukht">
                 <div class="platter-grid">
-                    <div class="platter-card">
+                    <div class="platter-card" data-aos="fade-up">
                         <div class="platter-header">
-                            <div class="platter-persons">2 Persons</div>
-                            <div class="platter-price">PKR 2,500</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>2 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 2,500</div>
                         </div>
-                        <h3 class="platter-title">Dum Pukht Special</h3>
-                        <p class="platter-urdu" dir="rtl">2 افراد اسپیشل پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 1 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 0.5 Mutton Dum Pukht</li>
-                            <li><i class="fas fa-check"></i> 1 Raita</li>
-                            <li><i class="fas fa-check"></i> 1 Salad</li>
-                            <li><i class="fas fa-check"></i> 1L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Dum Pukht Special 2 Persons" data-price="2500">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&h=400&fit=crop" alt="Dum Pukht Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Dum Pukht Special - 2 Persons</h3>
+                            <p class="platter-title-urdu">2 افراد اسپیشل پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 1 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 0.5 Mutton Dum Pukht</li>
+                                <li><i class="fas fa-check"></i> 1 Raita</li>
+                                <li><i class="fas fa-check"></i> 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 1L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Dum Pukht Special - 2 Persons', '2 افراد اسپیشل پلیٹر', 2500, '1 Kabuli Pulao, 0.5 Mutton Dum Pukht, 1 Raita, 1 Salad, 1L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="platter-card featured">
-                        <div class="platter-badge">Most Popular</div>
+                    <div class="platter-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="platter-header">
-                            <div class="platter-persons">4 Persons</div>
-                            <div class="platter-price">PKR 8,000</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>4 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 8,000</div>
                         </div>
-                        <h3 class="platter-title">Dum Pukht Special</h3>
-                        <p class="platter-urdu" dir="rtl">4 افراد اسپیشل پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 2.5 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 2 Mutton Dum Pukht</li>
-                            <li><i class="fas fa-check"></i> 2 Raita</li>
-                            <li><i class="fas fa-check"></i> 1 Salad</li>
-                            <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Dum Pukht Special 4 Persons" data-price="8000">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop" alt="Dum Pukht Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Dum Pukht Special - 4 Persons</h3>
+                            <p class="platter-title-urdu">4 افراد اسپیشل پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 2.5 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 2 Mutton Dum Pukht</li>
+                                <li><i class="fas fa-check"></i> 2 Raita</li>
+                                <li><i class="fas fa-check"></i> 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Dum Pukht Special - 4 Persons', '4 افراد اسپیشل پلیٹر', 8000, '2.5 Kabuli Pulao, 2 Mutton Dum Pukht, 2 Raita, 1 Salad, 1.5L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="platter-card">
+                    <div class="platter-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="platter-header">
-                            <div class="platter-persons">5 Persons</div>
-                            <div class="platter-price">PKR 10,000</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>5 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 10,000</div>
                         </div>
-                        <h3 class="platter-title">Dum Pukht Special</h3>
-                        <p class="platter-urdu" dir="rtl">5 افراد اسپیشل پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 2.5 Mutton Dum Pukht</li>
-                            <li><i class="fas fa-check"></i> 2 Raita</li>
-                            <li><i class="fas fa-check"></i> 1 Salad</li>
-                            <li><i class="fas fa-check"></i> 2.5L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Dum Pukht Special 5 Persons" data-price="10000">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop" alt="Dum Pukht Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Dum Pukht Special - 5 Persons</h3>
+                            <p class="platter-title-urdu">5 افراد اسپیشل پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 2.5 Mutton Dum Pukht</li>
+                                <li><i class="fas fa-check"></i> 2 Raita</li>
+                                <li><i class="fas fa-check"></i> 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 2.5L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Dum Pukht Special - 5 Persons', '5 افراد اسپیشل پلیٹر', 10000, '3 Kabuli Pulao, 2.5 Mutton Dum Pukht, 2 Raita, 1 Salad, 2.5L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="platter-card">
+                    <div class="platter-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="platter-header">
-                            <div class="platter-persons">6 Persons</div>
-                            <div class="platter-price">PKR 12,000</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>6 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 12,000</div>
                         </div>
-                        <h3 class="platter-title">Dum Pukht Special</h3>
-                        <p class="platter-urdu" dir="rtl">6 افراد اسپیشل پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 3 Mutton Dum Pukht</li>
-                            <li><i class="fas fa-check"></i> 2 Raita</li>
-                            <li><i class="fas fa-check"></i> 1 Salad</li>
-                            <li><i class="fas fa-check"></i> 2.5L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Dum Pukht Special 6 Persons" data-price="12000">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&h=400&fit=crop" alt="Dum Pukht Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Dum Pukht Special - 6 Persons</h3>
+                            <p class="platter-title-urdu">6 افراد اسپیشل پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 3 Mutton Dum Pukht</li>
+                                <li><i class="fas fa-check"></i> 2 Raita</li>
+                                <li><i class="fas fa-check"></i> 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 2.5L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Dum Pukht Special - 6 Persons', '6 افراد اسپیشل پلیٹر', 12000, '3 Kabuli Pulao, 3 Mutton Dum Pukht, 2 Raita, 1 Salad, 2.5L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Shinwari Platters -->
-            <div class="platter-category" id="shinwari">
+            <div class="platter-category" data-platter="shinwari">
                 <div class="platter-grid">
-                    <div class="platter-card">
+                    <div class="platter-card" data-aos="fade-up">
                         <div class="platter-header">
-                            <div class="platter-persons">3 Persons</div>
-                            <div class="platter-price">PKR 4,600</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>3 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 4,600</div>
                         </div>
-                        <h3 class="platter-title">Shinwari Platter</h3>
-                        <p class="platter-urdu" dir="rtl">3 افراد شنواری پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 1 Pata Tikka</li>
-                            <li><i class="fas fa-check"></i> 1 Leg Piece</li>
-                            <li><i class="fas fa-check"></i> 1 Chest Piece</li>
-                            <li><i class="fas fa-check"></i> 2 Malai Boti</li>
-                            <li><i class="fas fa-check"></i> 3 Kabab</li>
-                            <li><i class="fas fa-check"></i> 1 Raita & Salad</li>
-                            <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Shinwari Platter 3 Persons" data-price="4600">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1562158147-f6df85a8715c?w=600&h=400&fit=crop" alt="Shinwari Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Shinwari Platter - 3 Persons</h3>
+                            <p class="platter-title-urdu">3 افراد شنواری پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 1 Pata Tikka</li>
+                                <li><i class="fas fa-check"></i> 1 Leg Piece</li>
+                                <li><i class="fas fa-check"></i> 1 Chest Piece</li>
+                                <li><i class="fas fa-check"></i> 2 Malai Boti</li>
+                                <li><i class="fas fa-check"></i> 3 Kabab</li>
+                                <li><i class="fas fa-check"></i> 1 Raita, 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Shinwari Platter - 3 Persons', '3 افراد شنواری پلیٹر', 4600, '3 Kabuli Pulao, 1 Pata Tikka, 1 Leg Piece, 1 Chest Piece, 2 Malai Boti, 3 Kabab, 1 Raita, 1 Salad, 1.5L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="platter-card featured">
-                        <div class="platter-badge">Best Value</div>
+                    <div class="platter-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="platter-header">
-                            <div class="platter-persons">4 Persons</div>
-                            <div class="platter-price">PKR 7,200</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>4 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 7,200</div>
                         </div>
-                        <h3 class="platter-title">Shinwari Platter</h3>
-                        <p class="platter-urdu" dir="rtl">4 افراد شنواری پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 0.5 Mutton Tikka</li>
-                            <li><i class="fas fa-check"></i> 2 Pata Tikka</li>
-                            <li><i class="fas fa-check"></i> 1 Chest & Leg Piece</li>
-                            <li><i class="fas fa-check"></i> 2 Malai Boti</li>
-                            <li><i class="fas fa-check"></i> 4 Kabab</li>
-                            <li><i class="fas fa-check"></i> 2 Raita & Salad</li>
-                            <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Shinwari Platter 4 Persons" data-price="7200">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&h=400&fit=crop" alt="Shinwari Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Shinwari Platter - 4 Persons</h3>
+                            <p class="platter-title-urdu">4 افراد شنواری پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 3 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 0.5 Mutton Tikka</li>
+                                <li><i class="fas fa-check"></i> 2 Pata Tikka</li>
+                                <li><i class="fas fa-check"></i> 1 Chest & Leg Piece</li>
+                                <li><i class="fas fa-check"></i> 2 Malai Boti</li>
+                                <li><i class="fas fa-check"></i> 4 Kabab</li>
+                                <li><i class="fas fa-check"></i> 2 Raita, 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Shinwari Platter - 4 Persons', '4 افراد شنواری پلیٹر', 7200, '3 Kabuli Pulao, 0.5 Mutton Tikka, 2 Pata Tikka, 1 Chest & Leg Piece, 2 Malai Boti, 4 Kabab, 2 Raita, 1 Salad, 1.5L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="platter-card">
+                    <div class="platter-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="platter-header">
-                            <div class="platter-persons">5 Persons</div>
-                            <div class="platter-price">PKR 5,600</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>5 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 5,600</div>
                         </div>
-                        <h3 class="platter-title">Shinwari Platter</h3>
-                        <p class="platter-urdu" dir="rtl">5 افراد شنواری پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 4 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 1 Chicken Sajji</li>
-                            <li><i class="fas fa-check"></i> 2 Malai Boti</li>
-                            <li><i class="fas fa-check"></i> 1 Pata Tikka</li>
-                            <li><i class="fas fa-check"></i> 5 Kabab</li>
-                            <li><i class="fas fa-check"></i> 2 Raita & Salad</li>
-                            <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Shinwari Platter 5 Persons" data-price="5600">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop" alt="Shinwari Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Shinwari Platter - 5 Persons</h3>
+                            <p class="platter-title-urdu">5 افراد شنواری پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 4 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 1 Chicken Sajji</li>
+                                <li><i class="fas fa-check"></i> 2 Malai Boti</li>
+                                <li><i class="fas fa-check"></i> 1 Pata Tikka</li>
+                                <li><i class="fas fa-check"></i> 5 Kabab</li>
+                                <li><i class="fas fa-check"></i> 2 Raita, 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 1.5L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Shinwari Platter - 5 Persons', '5 افراد شنواری پلیٹر', 5600, '4 Kabuli Pulao, 1 Chicken Sajji, 2 Malai Boti, 1 Pata Tikka, 5 Kabab, 2 Raita, 1 Salad, 1.5L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="platter-card">
+                    <div class="platter-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="platter-header">
-                            <div class="platter-persons">6 Persons</div>
-                            <div class="platter-price">PKR 10,500</div>
+                            <div class="platter-persons">
+                                <i class="fas fa-users"></i>
+                                <span>6 Persons</span>
+                            </div>
+                            <div class="platter-price">Rs. 10,500</div>
                         </div>
-                        <h3 class="platter-title">Shinwari Platter</h3>
-                        <p class="platter-urdu" dir="rtl">6 افراد شنواری پلیٹر</p>
-                        <ul class="platter-items">
-                            <li><i class="fas fa-check"></i> 4 Kabuli Pulao</li>
-                            <li><i class="fas fa-check"></i> 1kg Mutton Seekh</li>
-                            <li><i class="fas fa-check"></i> 3 Malai Boti</li>
-                            <li><i class="fas fa-check"></i> 2 Leg & Chest Piece</li>
-                            <li><i class="fas fa-check"></i> 5 Kabab</li>
-                            <li><i class="fas fa-check"></i> 2 Pata Tikka</li>
-                            <li><i class="fas fa-check"></i> 2 Raita & Salad</li>
-                            <li><i class="fas fa-check"></i> 2.5L Cold Drink</li>
-                        </ul>
-                        <button class="btn-platter-order" data-platter="Shinwari Platter 6 Persons" data-price="10500">Order This Platter</button>
+                        <div class="platter-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop" alt="Shinwari Platter">
+                        </div>
+                        <div class="platter-content">
+                            <h3 class="platter-title">Shinwari Platter - 6 Persons</h3>
+                            <p class="platter-title-urdu">6 افراد شنواری پلیٹر</p>
+                            <ul class="platter-items">
+                                <li><i class="fas fa-check"></i> 4 Kabuli Pulao</li>
+                                <li><i class="fas fa-check"></i> 1kg Mutton Seekh</li>
+                                <li><i class="fas fa-check"></i> 3 Malai Boti</li>
+                                <li><i class="fas fa-check"></i> 2 Leg & Chest Piece</li>
+                                <li><i class="fas fa-check"></i> 5 Kabab</li>
+                                <li><i class="fas fa-check"></i> 2 Pata Tikka</li>
+                                <li><i class="fas fa-check"></i> 2 Raita, 1 Salad</li>
+                                <li><i class="fas fa-check"></i> 2.5L Cold Drink</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full" onclick="openPlatterModal('Shinwari Platter - 6 Persons', '6 افراد شنواری پلیٹر', 10500, '4 Kabuli Pulao, 1kg Mutton Seekh, 3 Malai Boti, 2 Leg & Chest Piece, 5 Kabab, 2 Pata Tikka, 2 Raita, 1 Salad, 2.5L Cold Drink')">
+                                <i class="fas fa-shopping-cart"></i> Order Now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -675,33 +1228,54 @@
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Visual Experience</span>
-                <h2 class="section-title">Gallery</h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Moments & Memories</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
+                <p class="section-description">Capturing the essence of our culinary journey</p>
             </div>
-            <div class="gallery-grid"> <div class="gallery-item"> <img src="images/gallery1.jpg" alt="Kohat Hujra Restaurant Interior" loading="lazy"> </div>
 
-<div class="gallery-item">
-    <img src="images/gallery2.jpg" alt="Mutton Karahi" loading="lazy">
-</div>
-
-<div class="gallery-item">
-    <img src="images/gallery3.jpg" alt="Chicken Sajji" loading="lazy">
-</div>
-
-<div class="gallery-item">
-    <img src="images/gallery4.jpg" alt="BBQ Platter" loading="lazy">
-</div>
-
-<div class="gallery-item">
-    <img src="images/gallery5.jpg" alt="Restaurant Seating Area" loading="lazy">
-</div>
-
-<div class="gallery-item">
-    <img src="images/gallery6.jpg" alt="Special Shinwari Dishes" loading="lazy">
-</div>
+            <div class="gallery-grid" data-aos="fade-up">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gallery Image</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gallery Image</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gallery Image</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gallery Image</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gallery Image</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gallery Image</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -709,51 +1283,57 @@
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Customer Reviews</span>
-                <h2 class="section-title">What Our Guests Say</h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What Our Guests Say</span>
+                <h2 class="section-title">Customer Reviews</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
             </div>
-            <div class="testimonials-grid">
+
+            <div class="testimonials-slider" data-aos="fade-up">
                 <div class="testimonial-card">
-                    <div class="stars">
+                    <div class="testimonial-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"The best Shinwari food in Kohat! The Mutton Karahi is absolutely delicious and the service is excellent. Highly recommended for authentic Pashtun cuisine."</p>
+                    <p class="testimonial-text">"The Mutton Karahi was absolutely delicious! The authentic flavors and warm hospitality made our dining experience unforgettable. Highly recommended!"</p>
                     <div class="testimonial-author">
                         <h4>Ahmed Khan</h4>
-                        <p>Regular Customer</p>
+                        <span>Food Enthusiast</span>
                     </div>
                 </div>
+
                 <div class="testimonial-card">
-                    <div class="stars">
+                    <div class="testimonial-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"Amazing food quality and generous portions. The Dum Pukht platter for our family gathering was perfect. Everyone loved it!"</p>
+                    <p class="testimonial-text">"Best Shinwari food in Kohat! The Dum Pukht is a must-try. The quality and taste are exceptional. We always order from here for family gatherings."</p>
                     <div class="testimonial-author">
-                        <h4>Fatima Ali</h4>
-                        <p>Food Enthusiast</p>
+                        <h4>Saima Malik</h4>
+                        <span>Regular Customer</span>
                     </div>
                 </div>
+
                 <div class="testimonial-card">
-                    <div class="stars">
+                    <div class="testimonial-stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <p class="testimonial-text">"Authentic taste, warm hospitality, and beautiful ambiance. Kohat Hujra truly brings the essence of Pashtun dining culture."</p>
+                    <p class="testimonial-text">"Outstanding food quality and excellent service. The platters are perfect for family dinners. Every dish is prepared with care and authentic spices."</p>
                     <div class="testimonial-author">
-                        <h4>Imran Shah</h4>
-                        <p>Local Resident</p>
+                        <h4>Usman Ali</h4>
+                        <span>Happy Customer</span>
                     </div>
                 </div>
             </div>
@@ -763,63 +1343,62 @@
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Common Questions</span>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Have Questions?</span>
                 <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
             </div>
-            <div class="faq-container">
+
+            <div class="faq-container" data-aos="fade-up">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What are your operating hours?</h3>
+                        <h4>What are your opening hours?</h4>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>We are open daily from 11:00 AM to 11:00 PM. We welcome dine-in, takeaway, and delivery orders throughout our operating hours.</p>
+                        <p>We are open daily from 11:00 AM to 11:00 PM. We serve fresh, authentic dishes throughout the day.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Do you offer home delivery?</h3>
+                        <h4>Do you offer home delivery?</h4>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes! You can order via WhatsApp at +92 333 9665538 and we'll deliver fresh, hot food to your doorstep in Kohat area.</p>
+                        <p>Yes! You can order via WhatsApp at +92 333 9665538 and we'll deliver to your location.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Can I book the restaurant for events?</h3>
+                        <h4>Can I customize the spice level?</h4>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Absolutely! We cater to family gatherings, corporate events, and special occasions. Contact us on WhatsApp or call us to discuss your requirements.</p>
+                        <p>Absolutely! We can adjust the spice level according to your preference. Just mention it when ordering.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>What makes your food authentic Shinwari?</h3>
+                        <h4>Do you cater for events?</h4>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>We use traditional Pashtun recipes, premium quality meat, and authentic cooking methods passed down through generations. Our chefs specialize in Shinwari cuisine.</p>
+                        <p>Yes, we offer catering services for weddings, corporate events, and special occasions. Contact us for custom packages.</p>
                     </div>
                 </div>
+
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Do you have vegetarian options?</h3>
+                        <h4>What payment methods do you accept?</h4>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>While we specialize in meat dishes, we offer fresh salads, raita, and can prepare vegetable sides upon request. Please contact us for specific requirements.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I place a WhatsApp order?</h3>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Simply click "Order Now" on any dish, select quantity, and it will open WhatsApp with your order details. You can then send it directly to us!</p>
+                        <p>We accept cash on delivery and all major mobile payment methods including JazzCash and EasyPaisa.</p>
                     </div>
                 </div>
             </div>
@@ -829,47 +1408,77 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Get In Touch</span>
                 <h2 class="section-title">Visit Us Today</h2>
+                <div class="title-divider">
+                    <span class="ornament">✦</span>
+                </div>
             </div>
+
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h3>Call Us</h3>
-                        <a href="tel:+923339665538">+92 333 9665538</a>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fab fa-whatsapp"></i>
-                        <h3>WhatsApp</h3>
-                        <a href="https://wa.me/923339665538" target="_blank">Chat with us</a>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-location-dot"></i>
-                        <h3>Address</h3>
-                        <p>KDA Road Malang Abad Pul No.4 School, Kohat, Pakistan</p>
-                    </div>
-                    <div class="contact-card">
-                        <i class="fas fa-share-nodes"></i>
-                        <h3>Follow Us</h3>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/p/Kohat-Hujra-Restaurant-61577576310277/" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="https://www.tiktok.com/@kohat.hujra.restaurent" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Address</h4>
+                            <p>KDA Road Malang Abad Pul No.4 School, Kohat, Pakistan</p>
                         </div>
                     </div>
-                </div>
-                <div class="contact-map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.6059632437227!2d71.45151137452766!3d33.59793534158455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d8ef8181063087%3A0xd697cc55bc93ae9a!2sKohat%20Hujra%20Restaurant!5e1!3m2!1sen!2s!4v1783010806105!5m2!1sen!2s"
 
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+923339665538">+92 333 9665538</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Opening Hours</h4>
+                            <p>Daily: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/923339665538" target="_blank" class="social-link whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/p/Kohat-Hujra-Restaurant-61577576310277/" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@kohat.hujra.restaurent?is_from_webapp=1&sender_device=pc" target="_blank" class="social-link tiktok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-map" data-aos="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.5!2d71.4540863!3d33.5979309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM1JzUyLjYiTiA3McKwMjcnMTQuNyJF!5e0!3m2!1sen!2s!4v1234567890"
                         width="100%" 
-                        height="400" 
+                        height="450" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
+                    <div class="map-buttons">
+                        <a href="https://maps.app.goo.gl/mry6xfA2y94xnHyN6" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-map-marked-alt"></i> Open in Maps
+                        </a>
+                        <a href="https://maps.app.goo.gl/mry6xfA2y94xnHyN6" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -880,89 +1489,136 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Kohat Hujra Restaurant</h3>
-                    <p>Experience authentic Shinwari and Pashtun flavors with premium hospitality.</p>
+                    <img src="logo.png" alt="Kohat Hujra Restaurant" class="footer-logo">
+                    <p class="footer-description">Experience authentic Shinwari and Pashtun flavors with premium hospitality.</p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/p/Kohat-Hujra-Restaurant-61577576310277/" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@kohat.hujra.restaurent" target="_blank"><i class="fab fa-tiktok"></i></a>
                         <a href="https://wa.me/923339665538" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/p/Kohat-Hujra-Restaurant-61577576310277/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@kohat.hujra.restaurent?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
+
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#menu">Menu</a></li>
                         <li><a href="#platters">Platters</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> +92 333 9665538</li>
-                        <li><i class="fas fa-location-dot"></i> KDA Road Malang Abad, Kohat</li>
-                        <li><i class="fas fa-clock"></i> 11:00 AM - 11:00 PM</li>
+                    <h4>Our Menu</h4>
+                    <ul class="footer-links">
+                        <li><a href="#menu">Mutton Dishes</a></li>
+                        <li><a href="#menu">Chicken Dishes</a></li>
+                        <li><a href="#menu">Hujra Special</a></li>
+                        <li><a href="#menu">Fish & BBQ</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Order Now</h4>
-                    <p>Experience the taste of authentic Pashtun cuisine</p>
-                    <a href="https://wa.me/923339665538" class="footer-cta">
-                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                    </a>
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> KDA Road Malang Abad, Kohat</li>
+                        <li><i class="fas fa-phone"></i> +92 333 9665538</li>
+                        <li><i class="fas fa-clock"></i> Daily: 11 AM - 11 PM</li>
+                    </ul>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 Kohat Hujra Restaurant. All rights reserved.</p>
-                <p class="urdu-text" dir="rtl">پخیر راغلے - تاسو ته ښه راغلاست</p>
+                <p>&copy; 2024 Kohat Hujra Restaurant. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for Authentic Cuisine</p>
             </div>
         </div>
     </footer>
 
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/923339665538" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+923339665538" class="floating-call">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Order Modal -->
     <div class="modal" id="orderModal">
+        <div class="modal-overlay" onclick="closeOrderModal()"></div>
         <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <h2 class="modal-title">Complete Your Order</h2>
+            <button class="modal-close" onclick="closeOrderModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="">
+                <h3 id="modalTitle"></h3>
+                <p id="modalTitleUrdu" class="modal-urdu"></p>
+            </div>
+
             <div class="modal-body">
-                <div class="order-item-info">
-                    <h3 id="modalDishName">Dish Name</h3>
-                    <p id="modalDishUrdu" class="urdu-text" dir="rtl">اردو نام</p>
-                    <div class="modal-price" id="modalPrice">PKR 0</div>
+                <div class="modal-price-display">
+                    <span class="price-label">Price:</span>
+                    <span id="modalPrice" class="price-value"></span>
                 </div>
-                <div class="order-form">
+
+                <div class="modal-form">
                     <div class="form-group">
                         <label>Quantity</label>
                         <div class="quantity-selector">
-                            <button type="button" class="qty-btn" id="qtyMinus">-</button>
-                            <input type="number" id="quantity" value="1" min="1" max="50" readonly>
-                            <button type="button" class="qty-btn" id="qtyPlus">+</button>
+                            <button type="button" onclick="decreaseQuantity()">-</button>
+                            <input type="number" id="quantity" value="1" min="1" readonly>
+                            <button type="button" onclick="increaseQuantity()">+</button>
                         </div>
                     </div>
+
+                    <div class="form-group">
+                        <label>Spice Level (Optional)</label>
+                        <select id="spiceLevel">
+                            <option value="">Regular</option>
+                            <option value="Less Spicy">Less Spicy</option>
+                            <option value="Medium Spicy">Medium Spicy</option>
+                            <option value="Extra Spicy">Extra Spicy</option>
+                        </select>
+                    </div>
+
                     <div class="form-group">
                         <label>Special Instructions (Optional)</label>
-                        <textarea id="orderNotes" placeholder="e.g., extra spicy, less oil, etc." rows="3"></textarea>
+                        <textarea id="specialNotes" rows="3" placeholder="Any special requests..."></textarea>
                     </div>
-                    <div class="order-total">
-                        <span>Total Amount:</span>
-                        <span id="totalAmount">PKR 0</span>
+
+                    <div class="total-display">
+                        <span>Total:</span>
+                        <span id="totalPrice">Rs. 0</span>
                     </div>
-                    <button class="btn-confirm-order" id="confirmOrder">
-                        <i class="fab fa-whatsapp"></i> Send Order via WhatsApp
+
+                    <button class="btn btn-primary btn-full" onclick="confirmOrder()">
+                        <i class="fab fa-whatsapp"></i> Confirm Order via WhatsApp
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script src="script.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
